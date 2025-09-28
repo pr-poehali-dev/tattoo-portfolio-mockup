@@ -61,6 +61,12 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				piercing: {
+					dark: '#000000',
+					silver: '#C0C0C0',
+					red: '#8B0000',
+					gradient: 'linear-gradient(135deg, #000000 0%, #8B0000 100%)'
 				}
 			},
 			borderRadius: {
