@@ -8,7 +8,7 @@ const piercingData = [
     id: 1,
     type: 'lip',
     title: 'Пирсинг губы',
-    image: '/img/ca8d771b-443a-4735-bd3f-7712cc85c65d.jpg',
+    image: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=500&h=500&fit=crop&crop=face',
     price: '2500₽',
     description: 'Классический пирсинг губы с качественным титановым украшением'
   },
@@ -16,7 +16,7 @@ const piercingData = [
     id: 2,
     type: 'ear',
     title: 'Пирсинг уха',
-    image: '/img/c2a67cbf-2738-4d3d-bc09-a16ab293164a.jpg',
+    image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=500&h=500&fit=crop&crop=entropy',
     price: '2000₽',
     description: 'Множественный пирсинг ушей с серебряными кольцами'
   },
@@ -24,7 +24,7 @@ const piercingData = [
     id: 3,
     type: 'navel',
     title: 'Пирсинг пупка',
-    image: '/img/35d2c958-e358-4df1-aa96-a1965aa3ad39.jpg',
+    image: 'https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=500&h=500&fit=crop&crop=entropy',
     price: '3000₽',
     description: 'Стильный пирсинг пупка с декоративными камнями'
   },
@@ -32,7 +32,7 @@ const piercingData = [
     id: 4,
     type: 'tongue',
     title: 'Пирсинг языка',
-    image: '/img/ca8d771b-443a-4735-bd3f-7712cc85c65d.jpg',
+    image: 'https://images.unsplash.com/photo-1492725764893-90b379c2b6e7?w=500&h=500&fit=crop&crop=face',
     price: '2800₽',
     description: 'Профессиональный пирсинг языка с медицинской сталью'
   },
@@ -40,7 +40,7 @@ const piercingData = [
     id: 5,
     type: 'eyebrow',
     title: 'Пирсинг брови',
-    image: '/img/c2a67cbf-2738-4d3d-bc09-a16ab293164a.jpg',
+    image: 'https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?w=500&h=500&fit=crop&crop=face',
     price: '2200₽',
     description: 'Аккуратный пирсинг брови с минималистичным украшением'
   }
@@ -92,20 +92,72 @@ function Index() {
 
   return (
     <div className="min-h-screen relative overflow-x-hidden">
-      {/* Scattered Stickers */}
-      <div className="absolute top-20 left-10 sticker z-10">
-        <div className="text-xl">💀</div>
+      {/* Left Side Comic Elements */}
+      <div className="absolute top-16 left-4 z-10">
+        <div className="bg-white border-2 border-black p-3 transform -rotate-12 shadow-lg">
+          <div className="text-sm font-bold">BOOM!</div>
+        </div>
       </div>
-      <div className="absolute top-40 right-16 sticker z-10" style={{transform: 'rotate(25deg)'}}>
-        <div className="text-xl">💎</div>
+      <div className="absolute top-48 left-2 z-10">
+        <div className="bg-yellow-300 border-2 border-black p-2 transform rotate-15 shadow-lg rounded-full">
+          <div className="text-xs font-bold">POW!</div>
+        </div>
       </div>
-      <div className="absolute top-60 left-1/4 sticker z-10" style={{transform: 'rotate(-30deg)'}}>
-        <div className="text-xl">🖤</div>
+      <div className="absolute top-80 left-6 z-10">
+        <div className="bg-red-500 text-white border-2 border-black p-2 transform -rotate-6 shadow-lg">
+          <div className="text-xs font-bold">BANG!</div>
+        </div>
       </div>
       
-      {/* Tape Elements */}
+      {/* Right Side Comic Elements */}
+      <div className="absolute top-24 right-4 z-10">
+        <div className="bg-pink-400 border-2 border-black p-3 transform rotate-12 shadow-lg">
+          <div className="text-sm font-bold">WOW!</div>
+        </div>
+      </div>
+      <div className="absolute top-64 right-2 z-10">
+        <div className="bg-blue-400 text-white border-2 border-black p-2 transform -rotate-18 shadow-lg rounded-full">
+          <div className="text-xs font-bold">COOL!</div>
+        </div>
+      </div>
+      <div className="absolute top-96 right-8 z-10">
+        <div className="bg-green-400 border-2 border-black p-2 transform rotate-8 shadow-lg">
+          <div className="text-xs font-bold">NICE!</div>
+        </div>
+      </div>
+      
+      {/* Kuromi Stickers */}
+      <div className="absolute top-20 left-10 sticker z-10">
+        <div className="bg-white rounded-full p-2 border-2 border-pink-300">
+          <div className="text-lg">🐰</div>
+        </div>
+      </div>
+      <div className="absolute top-40 right-16 sticker z-10" style={{transform: 'rotate(25deg)'}}>
+        <div className="bg-pink-200 rounded-full p-2 border-2 border-black">
+          <div className="text-lg">🖤</div>
+        </div>
+      </div>
+      <div className="absolute top-60 left-1/4 sticker z-10" style={{transform: 'rotate(-30deg)'}}>
+        <div className="bg-purple-200 rounded-full p-2 border-2 border-pink-400">
+          <div className="text-lg">💀</div>
+        </div>
+      </div>
+      <div className="absolute bottom-32 left-8 sticker z-10" style={{transform: 'rotate(15deg)'}}>
+        <div className="bg-black rounded-full p-2 border-2 border-pink-300">
+          <div className="text-lg text-white">🎀</div>
+        </div>
+      </div>
+      <div className="absolute bottom-48 right-12 sticker z-10" style={{transform: 'rotate(-20deg)'}}>
+        <div className="bg-pink-300 rounded-full p-2 border-2 border-black">
+          <div className="text-lg">👑</div>
+        </div>
+      </div>
+      
+      {/* More Tape Elements */}
       <div className="absolute top-32 right-20 tape-element w-16 h-6 transform rotate-12 z-10"></div>
       <div className="absolute top-80 left-8 tape-element w-20 h-6 transform -rotate-6 z-10"></div>
+      <div className="absolute top-120 right-4 tape-element w-12 h-4 transform rotate-45 z-10"></div>
+      <div className="absolute bottom-80 left-16 tape-element w-18 h-5 transform -rotate-12 z-10"></div>
       
       {/* Header with Magazine Letter Style Title */}
       <header className="relative py-12 px-4 text-center">
@@ -141,6 +193,13 @@ function Index() {
         <div className="max-w-4xl mx-auto mb-12">
           <div className="relative bg-white p-6 transform -rotate-1 shadow-2xl border-2 border-gray-300" style={{background: 'linear-gradient(45deg, #f9f9f9 25%, transparent 25%), linear-gradient(-45deg, #f9f9f9 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #f9f9f9 75%), linear-gradient(-45deg, transparent 75%, #f9f9f9 75%)', backgroundSize: '20px 20px', backgroundPosition: '0 0, 0 10px, 10px -10px, -10px 0px'}}>
             <h2 className="text-2xl font-bold text-center mb-6 handwriting text-blue-600">~ Мои работы ~</h2>
+            
+            {/* Kuromi sticker on gallery */}
+            <div className="absolute top-4 right-4 sticker" style={{transform: 'rotate(-15deg)'}}>
+              <div className="bg-pink-100 rounded-full p-2 border-2 border-purple-400">
+                <div className="text-sm">🐰💜</div>
+              </div>
+            </div>
             
             <Carousel className="w-full max-w-2xl mx-auto">
               <CarouselContent>
@@ -265,9 +324,23 @@ function Index() {
 
         {/* Additional Scattered Elements */}
         <div className="absolute bottom-20 right-10 sticker z-10" style={{transform: 'rotate(45deg)'}}>
-          <div className="text-xl">⚡</div>
+          <div className="bg-yellow-200 rounded-full p-2 border-2 border-orange-400">
+            <div className="text-lg">⚡</div>
+          </div>
         </div>
         <div className="absolute bottom-40 left-20 tape-element w-24 h-6 transform rotate-12 z-10"></div>
+        
+        {/* More Comic Speech Bubbles */}
+        <div className="absolute top-[600px] left-4 z-10">
+          <div className="bg-white border-2 border-black rounded-lg p-2 transform rotate-3 shadow-lg">
+            <div className="text-xs font-bold text-center">PIERCING<br/>RULES!</div>
+          </div>
+        </div>
+        <div className="absolute top-[800px] right-6 z-10">
+          <div className="bg-cyan-300 border-2 border-black rounded-lg p-2 transform -rotate-8 shadow-lg">
+            <div className="text-xs font-bold text-center">SO<br/>COOL!</div>
+          </div>
+        </div>
       </div>
 
       {/* Image Modal */}
