@@ -97,5 +97,120 @@
 
   body {
     @apply bg-background text-foreground;
+    background-image: url("/img/a8faeb0c-6651-4ce7-a623-4697f1b53565.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  .magazine-letter {
+    font-family: "Arial Black", Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    box-shadow:
+      3px 3px 6px rgba(0, 0, 0, 0.3),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+  }
+
+  .polaroid-photo {
+    background: white;
+    padding: 8px 8px 24px 8px;
+    box-shadow:
+      0 2px 6px rgba(0, 0, 0, 0.3),
+      0 8px 20px rgba(0, 0, 0, 0.15);
+    transform-origin: center;
+  }
+
+  .tape-element {
+    background: rgba(255, 248, 220, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  .paper-tear {
+    background: white;
+    position: relative;
+  }
+
+  .paper-tear::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: white;
+    clip-path: polygon(
+      0% 0%,
+      5% 100%,
+      10% 0%,
+      15% 100%,
+      20% 0%,
+      25% 100%,
+      30% 0%,
+      35% 100%,
+      40% 0%,
+      45% 100%,
+      50% 0%,
+      55% 100%,
+      60% 0%,
+      65% 100%,
+      70% 0%,
+      75% 100%,
+      80% 0%,
+      85% 100%,
+      90% 0%,
+      95% 100%,
+      100% 0%
+    );
+  }
+
+  .handwriting {
+    font-family: "Caveat", cursive;
+    color: #2563eb;
+  }
+
+  .comic-bubble {
+    background: white;
+    border: 3px solid black;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 4px 4px 0px black;
+  }
+
+  .comic-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid black;
+  }
+
+  .comic-bubble::before {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid white;
+    z-index: 1;
+  }
+
+  .sticker {
+    background: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 8px;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
+    transform: rotate(-15deg);
   }
 }
